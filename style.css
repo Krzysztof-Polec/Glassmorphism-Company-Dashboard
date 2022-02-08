@@ -1,0 +1,1390 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-30deg, #33ccff, #81d5ff, #ffccff, #81d5ff);
+}
+
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+  height: 85%;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.wrapper .wrapperContent {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .wrapperContent .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapperContent .header img {
+  width: 300px;
+  margin-left: 10px;
+}
+
+.wrapper .wrapperContent .header .header-right-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.wrapper .wrapperContent .header .header-right-panel svg {
+  width: 50px;
+  height: auto;
+}
+
+.wrapper .wrapperContent .header .header-right-panel .info-about-account {
+  margin-top: 3px;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .wrapperContent .header .header-right-panel .info-about-account .accountName {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.wrapper .wrapperContent .header .header-right-panel .info-about-account .accountEmail {
+  color: #121212;
+}
+
+.wrapper .wrapperContent .mainContent {
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+
+.wrapper .wrapperContent .mainContent .leftPanel {
+  width: 20%;
+  height: 92%;
+}
+
+.wrapper .wrapperContent .mainContent .leftPanel .leftPanelWrapper {
+  height: 90%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-left: 25px;
+}
+
+.wrapper .wrapperContent .mainContent .leftPanel .leftPanelWrapper ul {
+  list-style: none;
+  font-size: 26px;
+}
+
+.wrapper .wrapperContent .mainContent .leftPanel .leftPanelWrapper ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin: 25px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.wrapper .wrapperContent .mainContent .leftPanel .leftPanelWrapper ul li svg {
+  width: 30px;
+  height: 30px;
+}
+
+.wrapper .wrapperContent .mainContent .leftPanel .leftPanelWrapper ul li:first-of-type {
+  background-color: #5ba8f6;
+}
+
+.wrapper .wrapperContent .mainContent .leftPanel .leftPanelWrapper ul li:hover {
+  background-color: #5ba8f6 !important;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel {
+  width: 80%;
+  height: 92%;
+  margin-left: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 75px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat1 {
+  width: 35%;
+  height: 35%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat1 .stat1-header {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat1 .stat1-content {
+  height: 81%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  margin-top: 16px;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat1 .stat1-content > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding-left: 30px;
+  padding-right: 3px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat1 .stat1-content > div p {
+  font-weight: bold;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat2 {
+  width: 20%;
+  height: 35%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat2 .stat2-header {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat2 .stat2-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat2 .stat2-content svg {
+  width: 40px;
+  fill: green;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat3 {
+  width: 25%;
+  height: 35%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat3 .stat3-header {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat3 .stat3-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat3 .stat3-content svg {
+  width: 40px;
+  fill: #ff9500;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat4 {
+  width: 25%;
+  height: 35%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat4 .stat4-header {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat4 .stat4-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat4 .stat4-content svg {
+  width: 40px;
+  fill: #17b7ec;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat5 {
+  width: 35%;
+  height: 35%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat5 .stat5-header {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat5 .stat5-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat6 {
+  width: 20%;
+  height: 35%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat6 .stat6-header {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat6 .stat6-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.wrapper .wrapperContent .mainContent .rightPanel .stat6 .stat6-content svg {
+  width: 40px;
+  fill: #aa00ff;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper {
+  width: 80%;
+  height: 83%;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel {
+  width: 100%;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesPanelHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesPanelHeader .employeesTittle {
+  font-weight: bold;
+  border-bottom: 2px solid #bcb8b8;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesContent {
+  width: 100%;
+  height: 85%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesContent::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesContent::-webkit-scrollbar-thumb {
+  background-color: #90A4AE;
+  border-radius: 6px;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesContent > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #bcb8b8;
+  padding: 10px 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesContent > div > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesContent > div > div:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesContent > div:first-of-type {
+  border-top: 1px solid #bcb8b8;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesContent > div img {
+  width: 40px;
+  margin-left: 25px;
+}
+
+.wrapper .wrapperContent .mainContent .employeesWrapper .employeesPanel .employeesContent > div:hover {
+  background-color: gainsboro;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper {
+  width: 80%;
+  height: 83%;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel {
+  width: 100%;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsPanelHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsPanelHeader .jobOffertsTittle {
+  font-weight: bold;
+  border-bottom: 2px solid #bcb8b8;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsPanelHeader .addJob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bcb8b8;
+  border-radius: 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsPanelHeader .addJob:hover {
+  background-color: #bcb8b8;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsContent {
+  width: 100%;
+  height: 85%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsContent::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsContent::-webkit-scrollbar-thumb {
+  background-color: #90A4AE;
+  border-radius: 6px;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsContent > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #bcb8b8;
+  padding: 10px 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsContent > div:first-of-type {
+  border-top: 1px solid #bcb8b8;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsContent > div img {
+  width: 40px;
+  margin-left: 25px;
+}
+
+.wrapper .wrapperContent .mainContent .jobOffertsWrapper .jobOffertsPanel .jobOffertsContent > div:hover {
+  background-color: gainsboro;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper {
+  width: 80%;
+  height: 83%;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel {
+  width: 100%;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelHeader .addJobOffertsPanelTittle {
+  font-weight: bold;
+  border-bottom: 2px solid #bcb8b8;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelHeader .closeAddingJob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bcb8b8;
+  border-radius: 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelHeader .closeAddingJob:hover {
+  background-color: #bcb8b8;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent {
+  margin-top: 50px;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 385px;
+  font-size: 22px;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .jobName,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .position,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .seats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .jobName input,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .position input,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .seats input {
+  padding: 7px;
+  width: 180px;
+  height: 32px;
+  border: none;
+  border-bottom: 2px solid #bcb8b8;
+  background-color: transparent;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .jobName input:active, .wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .jobName input:focus,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .position input:active,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .position input:focus,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .seats input:active,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .seats input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .jobName select,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .position select,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .seats select {
+  padding: 7px;
+  width: 180px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .jobName select:active, .wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .jobName select:focus,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .position select:active,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .position select:focus,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .seats select:active,
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .seats select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent .addJobEroor {
+  display: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  color: red;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent input[type=button] {
+  width: 200px;
+  padding: 10px;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background-color: #c33ac3;
+  border: 2px solid #c33ac3;
+  border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.wrapper .wrapperContent .mainContent .addJobOffertsWrapper .addJobOffertsPanel .addJobOffertsPanelContent input[type=button]:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper {
+  width: 80%;
+  height: 83%;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel {
+  width: 100%;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesPanelHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesPanelHeader .candidatesTittle {
+  font-weight: bold;
+  border-bottom: 2px solid #bcb8b8;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesContent {
+  width: 100%;
+  height: 85%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesContent::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesContent::-webkit-scrollbar-thumb {
+  background-color: #90A4AE;
+  border-radius: 6px;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesContent > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #bcb8b8;
+  padding: 10px 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesContent > div > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesContent > div > div:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesContent > div > div:last-of-type img {
+  cursor: pointer;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesContent > div:first-of-type {
+  border-top: 1px solid #bcb8b8;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesContent > div img {
+  width: 40px;
+  margin-left: 25px;
+}
+
+.wrapper .wrapperContent .mainContent .candidatesWrapper .candidatesPanel .candidatesContent > div:hover {
+  background-color: gainsboro;
+}
+
+.wrapper .userWrapperContent {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.wrapper .userWrapperContent .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .userWrapperContent .header img {
+  width: 300px;
+  margin-left: 10px;
+}
+
+.wrapper .userWrapperContent .header .header-right-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.wrapper .userWrapperContent .header .header-right-panel svg {
+  width: 50px;
+  height: auto;
+}
+
+.wrapper .userWrapperContent .header .header-right-panel .info-about-account {
+  margin-top: 3px;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .userWrapperContent .header .header-right-panel .info-about-account .accountName {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.wrapper .userWrapperContent .header .header-right-panel .info-about-account .accountEmail {
+  color: #121212;
+}
+
+.wrapper .userWrapperContent .mainContent {
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+
+.wrapper .userWrapperContent .mainContent .leftPanel {
+  width: 20%;
+  height: 92%;
+}
+
+.wrapper .userWrapperContent .mainContent .leftPanel .leftPanelWrapper {
+  height: 90%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-left: 25px;
+}
+
+.wrapper .userWrapperContent .mainContent .leftPanel .leftPanelWrapper ul {
+  list-style: none;
+  font-size: 26px;
+}
+
+.wrapper .userWrapperContent .mainContent .leftPanel .leftPanelWrapper ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin: 25px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.wrapper .userWrapperContent .mainContent .leftPanel .leftPanelWrapper ul li svg {
+  width: 30px;
+  height: 30px;
+}
+
+.wrapper .userWrapperContent .mainContent .leftPanel .leftPanelWrapper ul li:first-of-type {
+  background-color: #5ba8f6;
+}
+
+.wrapper .userWrapperContent .mainContent .leftPanel .leftPanelWrapper ul li:hover {
+  background-color: #5ba8f6 !important;
+}
+
+.wrapper .userWrapperContent .mainContent .userRightPanel {
+  width: 80%;
+  height: 92%;
+  margin-left: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 75px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .userWrapperContent .mainContent .userRightPanel .stat1 {
+  width: 25%;
+  height: 35%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.wrapper .userWrapperContent .mainContent .userRightPanel .stat1 .stat1-header {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.wrapper .userWrapperContent .mainContent .userRightPanel .stat1 .stat1-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.wrapper .userWrapperContent .mainContent .userRightPanel .stat1 .stat1-content svg {
+  width: 40px;
+  fill: #ff9500;
+}
+
+.wrapper .userWrapperContent .mainContent .userRightPanel .stat2 {
+  width: 25%;
+  height: 35%;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.wrapper .userWrapperContent .mainContent .userRightPanel .stat2 .stat2-header {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.wrapper .userWrapperContent .mainContent .userRightPanel .stat2 .stat2-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.wrapper .userWrapperContent .mainContent .userRightPanel .stat2 .stat2-content svg {
+  width: 40px;
+  fill: #17b7ec;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper {
+  width: 80%;
+  height: 83%;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel {
+  width: 100%;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .jobOffertsPanelHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .jobOffertsPanelHeader .jobOffertsTittle {
+  font-weight: bold;
+  border-bottom: 2px solid #bcb8b8;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .userJobOffertsContent {
+  width: 100%;
+  height: 85%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .userJobOffertsContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .userJobOffertsContent::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .userJobOffertsContent::-webkit-scrollbar-thumb {
+  background-color: #90A4AE;
+  border-radius: 6px;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .userJobOffertsContent > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #bcb8b8;
+  padding: 10px 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .userJobOffertsContent > div > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .userJobOffertsContent > div > div:first-of-type p:last-of-type {
+  font-weight: bold;
+  color: #121212;
+  margin-left: 40px;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .userJobOffertsContent > div:first-of-type {
+  border-top: 1px solid #bcb8b8;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .userJobOffertsContent > div img {
+  width: 40px;
+  margin-left: 25px;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .userJobOffertsContent > div .userApplyBtn {
+  cursor: pointer;
+}
+
+.wrapper .userWrapperContent .mainContent .userJobOffertsWrapper .jobOffertsPanel .userJobOffertsContent > div:hover {
+  background-color: gainsboro;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper {
+  width: 80%;
+  height: 83%;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel {
+  width: 100%;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelHeader .userApplyPanelTittle {
+  font-weight: bold;
+  border-bottom: 2px solid #bcb8b8;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelHeader .userCloseApplyPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bcb8b8;
+  border-radius: 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelHeader .userCloseApplyPanel:hover {
+  background-color: #bcb8b8;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 420px;
+  font-size: 22px;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelContent .userApplyInformations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelContent .userApplyInformations > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelContent .userApplyInformations > div input {
+  padding: 7px;
+  width: 180px;
+  height: 32px;
+  border: none;
+  border-bottom: 2px solid #bcb8b8;
+  background-color: transparent;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelContent .userApplyInformations > div input:active, .wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelContent .userApplyInformations > div input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelContent .userApplyInformations > div input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelContent .userApplyError {
+  display: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  color: red;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelContent input[type=button] {
+  width: 200px;
+  padding: 10px;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background-color: #c33ac3;
+  border: 2px solid #c33ac3;
+  border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.wrapper .userWrapperContent .mainContent .userApplyWrapper .userApplyPanel .userApplyPanelContent input[type=button]:hover {
+  background-color: transparent;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
